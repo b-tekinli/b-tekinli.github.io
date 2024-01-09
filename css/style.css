@@ -41,9 +41,12 @@ body.dark {
 /* GLOBAL */
 
 body {
-  font-size: 16px; /* yazı büyüklüğü */
-  line-height: 1.5; /* satır yüksekliği */
-  overflow-x: hidden; /* yatay taşma - gizleme */
+  font-size: 16px;
+  /* yazı büyüklüğü */
+  line-height: 1.5;
+  /* satır yüksekliği */
+  overflow-x: hidden;
+  /* yatay taşma - gizleme */
   background-color: var(--bg-black-50);
 }
 
@@ -228,26 +231,31 @@ img {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
 @keyframes topBounce {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(25px);
   }
 }
 
 @keyframes leftBounce {
+
   0%,
   100% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(25px);
   }
@@ -258,6 +266,7 @@ img {
     opacity: 0;
     transform: translateY(-25px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0px);
@@ -339,10 +348,12 @@ img {
 }
 
 @keyframes loaderAni {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-30px);
   }
@@ -456,6 +467,7 @@ img {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -807,17 +819,11 @@ img {
   z-index: -1;
 }
 
-.about-section
-  .timeline
-  .timeline-item:nth-child(odd)
-  .timeline-item-inner:before {
+.about-section .timeline .timeline-item:nth-child(odd) .timeline-item-inner:before {
   right: -30px;
 }
 
-.about-section
-  .timeline
-  .timeline-item:nth-child(even)
-  .timeline-item-inner:before {
+.about-section .timeline .timeline-item:nth-child(even) .timeline-item-inner:before {
   left: -30px;
 }
 

@@ -266,7 +266,6 @@ function bodyScrollingToggle() {
 
 /* HIDE ALL SECTIONS EXCEPT ACTIVE */
 
-
 (() => {
     const sections = document.querySelectorAll(".section");
     sections.forEach((section) => {
@@ -360,5 +359,3 @@ function updatedIcon() {
         dayNight.querySelector("i").classList.add("fa-moon");
     }
 }
-
-
