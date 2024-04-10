@@ -221,47 +221,78 @@ function bodyScrollingToggle() {
 
 /* TESTIMONIAL SLIDER */
 
-(() => {
-    const sliderContainer = document.querySelector(".testi-slider-container"),
-        slides = sliderContainer.querySelectorAll(".testi-item"),
-        slideWidth = sliderContainer.offsetWidth,
-        prevBtn = document.querySelector(".testi-slider-nav .prev"),
-        nextBtn = document.querySelector(".testi-slider-nav .next"),
-        activeSlide = sliderContainer.querySelector(".testi-item.active");
-    let slideIndex = Array.from(activeSlide.parentElement.children).indexOf(activeSlide);
+// (() => {
+//     const sliderContainer = document.querySelector(".testi-slider-container"),
+//         slides = sliderContainer.querySelectorAll(".testi-item"),
+//         slideWidth = sliderContainer.offsetWidth,
+//         prevBtn = document.querySelector(".testi-slider-nav .prev"),
+//         nextBtn = document.querySelector(".testi-slider-nav .next"),
+//         activeSlide = sliderContainer.querySelector(".testi-item.active");
+//     let slideIndex = Array.from(activeSlide.parentElement.children).indexOf(activeSlide);
 
-    slides.forEach((slide) => {
-        slide.style.width = slideWidth + "px";
-    })
+//     slides.forEach((slide) => {
+//         slide.style.width = slideWidth + "px";
+//     })
 
-    sliderContainer.style.width = slideWidth * slides.length + "px";
+//     sliderContainer.style.width = slideWidth * slides.length + "px";
 
-    nextBtn.addEventListener("click", () => {
-        if (slideIndex === slides.length - 1) {
-            slideIndex = 0;
-        } else {
-            slideIndex++;
-        }
-        slider();
-    })
+//     nextBtn.addEventListener("click", () => {
+//         if (slideIndex === slides.length - 1) {
+//             slideIndex = 0;
+//         } else {
+//             slideIndex++;
+//         }
+//         slider();
+//     })
 
-    prevBtn.addEventListener("click", () => {
-        if (slideIndex === 0) {
-            slideIndex = slides.length - 1;
-        } else {
-            slideIndex--;
-        }
-        slider();
-    })
+//     prevBtn.addEventListener("click", () => {
+//         if (slideIndex === 0) {
+//             slideIndex = slides.length - 1;
+//         } else {
+//             slideIndex--;
+//         }
+//         slider();
+//     })
 
-    function slider() {
-        sliderContainer.querySelector(".testi-item.active").classList.remove("active");
-        slides[slideIndex].classList.add("active");
-        sliderContainer.style.marginLeft = -(slideWidth * slideIndex) + "px";
-    }
-    slider();
+//     function slider() {
+//         sliderContainer.querySelector(".testi-item.active").classList.remove("active");
+//         slides[slideIndex].classList.add("active");
+//         sliderContainer.style.marginLeft = -(slideWidth * slideIndex) + "px";
+//     }
+//     slider();
 
-})();
+// })();
+
+
+/* CONTACT */
+
+// document.getElementsByClassName("contact-from").addEventListener("submit", function (event) {
+//     event.preventDefault(); // Prevent default form submission
+
+//     // Retrieve input values
+//     var name = document.getElementById("nameInput").value;
+//     var email = document.getElementById("emailInput").value;
+//     var subject = document.getElementById("subjectInput").value;
+//     var message = document.getElementById("messageInput").value;
+
+//     // Prepare data to be written to the file
+//     var dataToWrite = "Name: " + name + "\nEmail: " + email + "\nSubject: " + subject + "\nMessage: " + message + "\n\n";
+
+//     // Send data to server-side script for writing to file (assuming you have a server-side script to handle file writing)
+//     // Example:
+//     // var xhr = new XMLHttpRequest();
+//     // xhr.open("POST", "writeToFile.php", true);
+//     // xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+//     // xhr.onreadystatechange = function() {
+//     //     if (xhr.readyState === 4 && xhr.status === 200) {
+//     //         console.log("Data saved successfully!");
+//     //     }
+//     // };
+//     // xhr.send("data=" + encodeURIComponent(dataToWrite));
+
+//     // For demonstration purposes, let's log the data instead
+//     console.log("Data to write:", dataToWrite);
+// });
 
 
 /* HIDE ALL SECTIONS EXCEPT ACTIVE */

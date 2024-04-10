@@ -1043,6 +1043,8 @@ img {
 }
 
 .portfolio-section .portfolio-item-img img {
+  width: 320px;
+  height: 180px;
   border-radius: 5px;
   width: 100%;
   transition: all 0.3s ease;
@@ -1081,7 +1083,7 @@ img {
 
 .portfolio-section .portfolio-item-inner p {
   font-size: 16px;
-  margin: 10px 0 0;
+  margin: 20px 0 0;
   color: var(--text-black-600);
   text-transform: capitalize;
 }
